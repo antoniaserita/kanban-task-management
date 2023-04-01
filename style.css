@@ -1,0 +1,476 @@
+body{
+    font-family: sans-serif;
+    display         : grid;
+    place-content: left;
+    background-color:rgb(32,33,44) ;
+    cursor: all-scroll;
+}
+.container{
+    padding: 0;
+}
+
+.content{
+    display: grid;
+    column-gap: 18px;
+    row-gap: 18px;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows:repeat(7);
+    grid-template-areas: "kanban platformlaunch platformlaunch platformlaunch platformlaunch"
+    "all-boards tally1 tally2 tally3 tally3"
+    "all-boards task1 task2 task3 new-column"
+    "all-boards task4 task5 task6 new-column"
+    "all-boards task7 task8 task9 new-column"
+    "all-boards task10 task11 task12 new-column"
+    "all-boards task90 task13 task14 new"
+    "all-boards task00 task15 task16 new"
+    "all-boards task0  task0   task17 new"
+
+}
+
+.kanban{
+    grid-area: kanban;
+    background-color:rgb(43,44,55) ;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    width: 6cm;
+    height: 2cm;
+}
+.kanbanimg{
+    padding-top: 29px;
+    padding-left: 18px;
+    height: 21px;
+    background-color:rgb(43,44,55) ;
+    padding-bottom: 25px;
+    padding-right: 90px;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+     
+}
+img{
+    padding-top: 19px;
+    padding-left: 18px;
+    height: 21px;
+    background-color:rgb(43,44,55) ;
+}
+
+.platformlaunch{
+    background-color:rgb(43,44,55) ;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    height:2cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: platformlaunch;
+    cursor: context-menu;
+}
+
+.add{
+    background-color:rgb(99,95,199) ;
+    color: white;
+    width: 3cm;
+    border-radius: 24px;
+    height: 1cm;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 3px;
+    
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    color:  rgb(130,141,156);
+}
+
+h4{
+    color: rgb(255,255,255);
+    font-size: 20px;
+}
+
+
+h5{
+    color: rgb(255,255,255);
+}
+
+.all-boards{
+    grid-area: all-boards;
+    background-color: rgb(43,44,55);
+    width:6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    cursor: context-menu;
+}
+
+ul{ color: rgb(130,141,156);
+    font-size: 13px;
+    font-weight :600;
+    cursor: pointer;
+}
+
+.board{
+    background-color:rgb(99,95,199) ;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    gap: 1px;
+}
+.board2{
+    color: rgb(130,141,156);
+    display: flex;
+    gap: 1px;
+}
+.icon1{
+    background-color:rgb(99,95,199) ;
+    padding-bottom: 12px;
+    width: 14px;
+    height: 14px;
+}
+.icon{
+    padding-bottom: 12px;
+    width: 14px;
+    height: 14px;
+}
+.blue1{
+    color: white;
+    
+}
+.blue{
+    color:rgb(99,95,199) ;
+}
+
+p{
+    color: rgb(130,141,156);
+    font-size:12px ;
+    font-weight: 600;
+    padding-left: 23px;
+}
+
+.tally1{
+    grid-area: tally1;
+    cursor: help;
+
+}
+
+.tally2{
+    grid-area: tally2;
+    cursor: help;
+}
+
+.tally3{
+    grid-area: tally3;
+    cursor: help;
+}
+
+.new-column{
+    grid-area: new-column;
+    background-color: rgb(43,44,55);
+    width: 6cm;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    padding-top: 151px;
+    background-color: linear-gradient(to bottom, rgba(255,0,0,0),rgba(43,44,55));
+    
+}
+
+.task1{
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task1;
+}
+
+.task1:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+h3{
+    color: beige;
+    font-size: 12px;
+}
+
+h6{
+    color: rgb(130,141,156);
+
+}
+
+.task2{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task2;
+}
+.task2:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task3{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task3;
+}
+.task3:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task4{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task4;
+}
+.task4:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task5{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task5;
+}
+.task5:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task6{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task6;
+}
+.task6:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task7{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task7;
+}
+.task7:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task8{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task8;
+}
+.task8:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task9{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task9;
+}
+.task9:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task10{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task10;
+}
+.task10:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+.task11{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task11;
+}
+.task11:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task12{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task12;
+}
+.task12:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+.task13{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task13;
+}
+.task13:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task14{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task14;
+}
+.task14:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task15{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task15;
+}
+.task15:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task16{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task16;
+}
+.task16:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
+
+.task17{
+    border-color:rgb(130,129,125) ;
+    border-radius:6px ;
+    background-color:rgb(43,44,55) ;
+    width: 6cm;
+    border-style:groove ;
+    border-width: 0.1px;
+    border-color: rgba(130,143,163);
+    padding-left: 13px;
+    padding-top: 13px;
+    grid-area: task17;
+}
+.task17:hover{
+    background-color:hsla(0, 0%, 50%, 0.219);
+    cursor: grab;
+}
